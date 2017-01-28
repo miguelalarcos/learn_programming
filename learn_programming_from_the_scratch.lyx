@@ -1,0 +1,259 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part
+Learn by example, not by heart.
+\end_layout
+
+\begin_layout Standard
+In the 80's I learnt to program in my CPC-464.
+ No one showed me how to do it, I just learnt modifying examples.
+\end_layout
+
+\begin_layout Section
+The basics of coding:
+\end_layout
+
+\begin_layout Standard
+How to tell the computer to print some text:
+\end_layout
+
+\begin_layout LyX-Code
+
+\color red
+print
+\color inherit
+('hola, soy un computador')
+\end_layout
+
+\begin_layout LyX-Code
+> hola, soy un computador
+\end_layout
+
+\begin_layout Standard
+Variables:
+\end_layout
+
+\begin_layout LyX-Code
+x = 1
+\end_layout
+
+\begin_layout LyX-Code
+y = 2
+\end_layout
+
+\begin_layout LyX-Code
+z = x + y
+\end_layout
+
+\begin_layout LyX-Code
+print(z)
+\end_layout
+
+\begin_layout LyX-Code
+> 3
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout Standard
+Let's examine this example:
+\end_layout
+
+\begin_layout LyX-Code
+print('hola, soy María')
+\end_layout
+
+\begin_layout LyX-Code
+print('hola, soy Miguel')
+\end_layout
+
+\begin_layout LyX-Code
+print('hola, soy Raquel')
+\end_layout
+
+\begin_layout LyX-Code
+> hola, soy María
+\end_layout
+
+\begin_layout LyX-Code
+> hola, soy Miguel
+\end_layout
+
+\begin_layout LyX-Code
+> hola, soy Raquel
+\end_layout
+
+\begin_layout Standard
+You can see repetitive code: 
+\end_layout
+
+\begin_layout LyX-Code
+print('hola, soy ...')
+\end_layout
+
+\begin_layout Standard
+Can we tell the computer the same thing with less code? Yes, we can:
+\end_layout
+
+\begin_layout LyX-Code
+lista = ['María', 'Miguel', 'Raquel'] # lista is a variable of type list
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\color red
+for
+\color inherit
+ name 
+\color red
+in
+\color inherit
+ lista: # name is a variable of type string
+\end_layout
+
+\begin_layout LyX-Code
+  print('hola, soy', name)
+\end_layout
+
+\begin_layout Standard
+Functions:
+\end_layout
+
+\begin_layout LyX-Code
+
+\color red
+def
+\color inherit
+ triangle_area(side_a, side_b):
+\end_layout
+
+\begin_layout LyX-Code
+  
+\color red
+return
+\color inherit
+ (side_a*side_b)/2
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+print(triangle_area(3, 4))
+\end_layout
+
+\begin_layout LyX-Code
+> 6
+\end_layout
+
+\begin_layout Standard
+Conditions:
+\end_layout
+
+\begin_layout LyX-Code
+x = 5
+\end_layout
+
+\begin_layout LyX-Code
+if x == 0:
+\end_layout
+
+\begin_layout LyX-Code
+  print('x vale 0')
+\end_layout
+
+\begin_layout LyX-Code
+else:
+\end_layout
+
+\begin_layout LyX-Code
+  print('x es distinto de 0')
+\end_layout
+
+\begin_layout LyX-Code
+> x es distinto de 0
+\end_layout
+
+\end_body
+\end_document
