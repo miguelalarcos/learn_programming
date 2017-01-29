@@ -73,15 +73,18 @@ Learn by example, not by heart.
 \end_layout
 
 \begin_layout Standard
-In the 80's I learnt to program in my CPC-464.
- No one showed me how to do it, I just learnt modifying examples.
+In the 80's I learnt to program with my Amstrad CPC-464.
+ No one showed me how to do it, I just learnt the BASIC language by modifying
+ examples, normally simple games.
+ Today, the most suitable language to learn programming may be Python.
+ Let's dive into coding.
 \end_layout
 
 \begin_layout Section
 The basics of coding:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection
 How to tell the computer to print some text:
 \end_layout
 
@@ -90,14 +93,41 @@ How to tell the computer to print some text:
 \color red
 print
 \color inherit
-('hola, soy un computador')
+(
+\begin_inset Quotes eld
+\end_inset
+
+hello, I'm a computer
+\begin_inset Quotes erd
+\end_inset
+
+)
 \end_layout
 
 \begin_layout LyX-Code
-> hola, soy un computador
+> hello, I'm a computer
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+# or print a number
+\end_layout
+
+\begin_layout LyX-Code
+print(7)
+\end_layout
+
+\begin_layout LyX-Code
+> 7
+\end_layout
+
+\begin_layout Subsection
 Variables:
 \end_layout
 
@@ -121,78 +151,31 @@ print(z)
 > 3
 \end_layout
 
-\begin_layout LyX-Code
-
-\end_layout
-
-\begin_layout Standard
-Let's examine this example:
+\begin_layout Subsection
+Lists:
 \end_layout
 
 \begin_layout LyX-Code
-print('hola, soy María')
+lista = ['red', 'yellow', 'green']
 \end_layout
 
 \begin_layout LyX-Code
-print('hola, soy Miguel')
+print(lista[0])
 \end_layout
 
 \begin_layout LyX-Code
-print('hola, soy Raquel')
+> red
 \end_layout
 
 \begin_layout LyX-Code
-> hola, soy María
+print(lista[1])
 \end_layout
 
 \begin_layout LyX-Code
-> hola, soy Miguel
+> yellow
 \end_layout
 
-\begin_layout LyX-Code
-> hola, soy Raquel
-\end_layout
-
-\begin_layout Standard
-You can see repetitive code: 
-\end_layout
-
-\begin_layout LyX-Code
-print('hola, soy ...')
-\end_layout
-
-\begin_layout Standard
-Can we tell the computer the same thing with less code? Yes, we can:
-\end_layout
-
-\begin_layout LyX-Code
-lista = ['María', 'Miguel', 'Raquel'] # lista is a variable of type list
-\end_layout
-
-\begin_layout LyX-Code
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout LyX-Code
-
-\color red
-for
-\color inherit
- name 
-\color red
-in
-\color inherit
- lista: # name is a variable of type string
-\end_layout
-
-\begin_layout LyX-Code
-  print('hola, soy', name)
-\end_layout
-
-\begin_layout Standard
+\begin_layout Subsection
 Functions:
 \end_layout
 
@@ -227,7 +210,7 @@ print(triangle_area(3, 4))
 > 6
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection
 Conditions:
 \end_layout
 
@@ -240,7 +223,7 @@ if x == 0:
 \end_layout
 
 \begin_layout LyX-Code
-  print('x vale 0')
+  print('x is equal to 0')
 \end_layout
 
 \begin_layout LyX-Code
@@ -248,11 +231,90 @@ else:
 \end_layout
 
 \begin_layout LyX-Code
-  print('x es distinto de 0')
+  print('x is not equal to 0')
 \end_layout
 
 \begin_layout LyX-Code
-> x es distinto de 0
+> x is not equal to 0
+\end_layout
+
+\begin_layout Subsection
+Loops: 
+\end_layout
+
+\begin_layout Standard
+let's examine this example:
+\end_layout
+
+\begin_layout LyX-Code
+print('hello, my name's María')
+\end_layout
+
+\begin_layout LyX-Code
+print('hello, my name's Miguel')
+\end_layout
+
+\begin_layout LyX-Code
+print('hello, my name's Raquel')
+\end_layout
+
+\begin_layout LyX-Code
+> hello, my name's María
+\end_layout
+
+\begin_layout LyX-Code
+> hello, my name's Miguel
+\end_layout
+
+\begin_layout LyX-Code
+> hello, my name's Raquel
+\end_layout
+
+\begin_layout Standard
+You can see repetitive code: 
+\end_layout
+
+\begin_layout LyX-Code
+print('hello, my name's ...')
+\end_layout
+
+\begin_layout Standard
+Can we tell the computer the same thing with less code? Yes, we can:
+\end_layout
+
+\begin_layout LyX-Code
+lista = ['María', 'Miguel', 'Raquel'] # lista is a variable of type list
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\color red
+for
+\color inherit
+ name 
+\color red
+in
+\color inherit
+ lista: # name is a variable of type string
+\end_layout
+
+\begin_layout LyX-Code
+  print(
+\begin_inset Quotes eld
+\end_inset
+
+hello, my name's
+\begin_inset Quotes erd
+\end_inset
+
+, name)
 \end_layout
 
 \end_body
